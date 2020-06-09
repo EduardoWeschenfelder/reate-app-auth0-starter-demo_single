@@ -17,10 +17,19 @@ const NavBar = () => {
         <span>
           <Link
             style={{ color: '#fff', backgroundColor: 'blue', textDecoration: 'none', padding: '15px 30px', margin: '10px', borderRadius: '8px' }}
-            to="/">Home</Link>&nbsp;
+            to="/">
+            Home
+          </Link>&nbsp;
           <Link
             style={{ color: '#fff', backgroundColor: 'green', textDecoration: 'none', padding: '15px 30px', margin: '10px', borderRadius: '8px' }}
-            to="/profile">Profile</Link>
+            to="/profile">
+            Profile
+          </Link>
+          <Link
+            style={{ color: '#fff', backgroundColor: 'orange', textDecoration: 'none', padding: '15px 30px', margin: '10px', borderRadius: '8px' }}
+            to="/external-api">
+            External API
+          </Link>
         </span>
       )}
       {/* se estiver autenticado os botão logout aparece */}

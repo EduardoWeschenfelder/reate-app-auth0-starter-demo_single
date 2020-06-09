@@ -20,9 +20,8 @@ ReactDOM.render(
     client_id={config.clientId}
     redirect_uri={window.location.origin}
     onRedirectCallback={() => onRedirectCallback}
+    audience={config.audience}
   >
-    {console.log({ Auth0Provider })}
-
     <App />
   </Auth0Provider>,
   document.getElementById("root")
