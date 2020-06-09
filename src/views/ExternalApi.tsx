@@ -4,9 +4,9 @@ import { useAuth0 } from "../react-auth0-spa";
 const ExternalApi = () => {
   const [showResult, setShowResult] = useState(false);
   const [apiMessage, setApiMessage] = useState("");
-  const { getTokenSilently } = useAuth0();
+  const { getTokenSilently } = useAuth0(); //somente do lado do cliente
 
-  const callApi = async () => {
+  const callApi = async () => { // chamado no botão ping
     try {
       const token = await getTokenSilently();
       console.log({ token })
