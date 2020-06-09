@@ -29,7 +29,14 @@ const ExternalApi = () => {
   return (
     <div style={{ margin: '30px' }}>
       <h1>External API </h1>
-      <button onClick={callApi}> Ping API </button>
+      <button
+        style={{ color: '#fff', backgroundColor: 'green', outline: 'none', padding: '15px 30px', borderRadius: '8px' }}
+        onClick={callApi}
+      >
+        Ping API
+      </button>
+      <br />
+      <br />
       {showResult && <code>{JSON.stringify(apiMessage, null, 2)} </code>}
     </div>
   );

@@ -11,7 +11,7 @@ const Profile = () => {
   return (
     <div style={{ margin: '30px' }}>
       <Fragment >
-        <img src={user.picture} alt="Profile" />
+        <img style={{ width: '100px', height: '100px' }} src={user.picture} alt="Profile" />
 
         <h2>{user.nickname} </h2>
         < p > {user.email} </p>
