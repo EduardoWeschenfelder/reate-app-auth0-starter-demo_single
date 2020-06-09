@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="App">
-      {/* Don't forget to include the history module */}
       <Router history={history}>
         <header>
           <NavBar />
