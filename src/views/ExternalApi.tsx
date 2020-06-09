@@ -8,7 +8,7 @@ const ExternalApi = () => {
 
   const callApi = async () => { // chamado no botão ping
     try {
-      const token = await getTokenSilently();
+      const token = await getTokenSilently(); // busca token
       console.log({ token })
       const response = await fetch("http://localhost:3333/api/external", {
         headers: {
