@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 import { useAuth0 } from "../react-auth0-spa";
 
 const Profile = () => {
-  const { loading, user } = useAuth0();
+  const { loading, user } = useAuth0(); // pega o carregamento e usuario autenticado(dados)
 
   if (loading || !user) {
     return <div>Loading...</div>;
@@ -15,7 +15,7 @@ const Profile = () => {
 
         <h2>{user.nickname} </h2>
         < p > {user.email} </p>
-        {/* < code > {JSON.stringify(user, null, 2)} </code> */}
+        {/* < code > {JSON.stringify(user, null, 2)} </code>  */}
       </Fragment>
     </div>
   );
